@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>RootPromptNext - Web Hosting</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h2 class="m-0"><i class="fa fa-server me-3"></i>RootPromptNext WebHosting</nbsp></h2>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="domain.html" class="nav-item nav-link">Domain</a>
+                        <a href="hosting.html" class="nav-item nav-link">Hosting</a>
+                        <!-- div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="comparison.html" class="dropdown-item">Comparison</a>
+                            </div>
+                        </div-->
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                    <a href="" class="btn btn-secondary py-2 px-4 ms-3">Register</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 pt-5">
+                        <div class="col-12 text-center text-lg-start">
+                            <h1 class="display-4 text-white animated slideInLeft">Terms & Policies</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center justify-content-lg-start animated slideInLeft">
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Terms & Policies</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+ <!-- Policies Section Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Terms & Policies</h2>
+      
+      <!-- Tabs Navigation -->
+      <ul class="nav nav-tabs" id="policyTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="terms-tab" data-bs-toggle="tab" data-bs-target="#terms" type="button" role="tab" aria-controls="terms" aria-selected="true">Terms of Use</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="privacy-tab" data-bs-toggle="tab" data-bs-target="#privacy" type="button" role="tab" aria-controls="privacy" aria-selected="false">Privacy Policy</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="refund-tab" data-bs-toggle="tab" data-bs-target="#refund" type="button" role="tab" aria-controls="refund" aria-selected="false">Refund Policy</button>
+        </li>
+      </ul>
+  
+      <!-- Tabs Content -->
+      <div class="tab-content mt-4" id="policyTabsContent">
+        <!-- Terms of Use -->
+        <div class="tab-pane fade show active" id="terms" role="tabpanel" aria-labelledby="terms-tab">
+          <h4>Terms of Use</h4>
+          <p>Welcome to the RootPromptNext website (the "Website"). By accessing and using this Website, you agree to comply with and be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, please refrain from using the Website.</p>
+  
+          <h5>1. Website Use</h5>
+          <p><strong>Purpose:</strong> The Website provides information about RootPromptNext's services, training programs, and IT solutions.</p>
+          <p><strong>Eligibility:</strong> You must be at least 18 years old or have parental/guardian consent to use this Website.</p>
+          <p><strong>Accuracy of Information:</strong> While we strive for accuracy, we do not guarantee that the Website’s content is complete, error-free, or up-to-date.</p>
+  
+          <h5>2. Intellectual Property</h5>
+          <p><strong>Ownership:</strong> All content, including logos, graphics, text, and design elements, is the intellectual property of RootPromptNext. Unauthorized use, reproduction, or distribution is prohibited.</p>
+          <p><strong>Trademarks:</strong> The "RootPromptNext" name and logo are trademarks of RootPromptNext. Their use requires prior written consent.</p>
+  
+          <h5>3. User Conduct</h5>
+          <p><strong>Prohibited Actions:</strong></p>
+          <ul>
+            <li>Using the Website for fraudulent purposes.</li>
+            <li>Uploading malicious software, viruses, or harmful code.</li>
+            <li>Disrupting the Website’s functionality or other users' experiences.</li>
+          </ul>
+          <p><strong>Accountability:</strong> Users must ensure their activities comply with applicable laws and regulations.</p>
+  
+          <h5>4. Privacy</h5>
+          <p><strong>Data Collection:</strong> By using this Website, you agree to our collection and use of personal data as outlined in our Privacy Policy.</p>
+          <p><strong>Security:</strong> While we implement reasonable measures to protect your data, we cannot guarantee the security of transmitted information.</p>
+  
+          <h5>5. Limitation of Liability</h5>
+          <p>RootPromptNext is not liable for:</p>
+          <ul>
+            <li>Direct, indirect, or incidental damages resulting from Website use.</li>
+            <li>Service interruptions, errors, or inaccuracies on the Website.</li>
+            <li>Content on third-party websites linked through the Website.</li>
+          </ul>
+          <p><strong>No Warranty:</strong> The Website is provided "as is" without any warranty of any kind.</p>
+  
+          <h5>6. External Links</h5>
+          <p><strong>Third-Party Websites:</strong> Links to external sites are provided for convenience. RootPromptNext is not responsible for their content, policies, or practices.</p>
+  
+          <h5>7. Modification of Terms</h5>
+          <p>RootPromptNext reserves the right to update these Terms at any time. Changes will take effect immediately upon posting. Continued use of the Website constitutes acceptance of the updated Terms.</p>
+  
+          <h5>8. Governing Law</h5>
+          <p>These Terms are governed by the laws of India. Any disputes shall be subject to the jurisdiction of courts in India.</p>
+  
+          <h5>9. Domain Registration</h5>
+          <p><strong>Registration Process:</strong> By registering a domain through our service, you agree to provide accurate and complete information during the registration process, including your name, email address, and contact details. You must maintain the accuracy of this information and promptly update it if necessary.</p>
+          <p><strong>Availability:</strong> Domain names are subject to availability. We do not guarantee that the domain name you request will be available for registration.</p>
+          <p><strong>Regulatory Compliance:</strong> You must comply with all applicable domain registration rules and regulations, including those set by ICANN (Internet Corporation for Assigned Names and Numbers) and the domain registrar.</p>
+          <p><strong>Non-Refundable:</strong> Domain registration fees are non-refundable once the domain is registered.</p>
+  
+          <h5>10. Web Hosting</h5>
+          <p><strong>Hosting Services:</strong> By purchasing hosting services from RootPromptNext, you agree to use the service in accordance with our acceptable usage policies and not for any unlawful, abusive, or malicious activities.</p>
+          <p><strong>Content Responsibility:</strong> You are responsible for all content hosted on your website and agree not to upload any harmful, illegal, or infringing material.</p>
+          <p><strong>Suspension and Termination:</strong> We reserve the right to suspend or terminate your hosting services if we determine that you have violated any terms or engaged in malicious activity.</p>
+          <p><strong>Service Modifications:</strong> RootPromptNext reserves the right to modify, upgrade, or discontinue hosting services at any time, with notice provided to you.</p>
+  
+          <h5>11. Refunds for Domain Registration and Hosting</h5>
+          <p><strong>Domain Registration:</strong> Fees for domain registration are non-refundable once the domain has been successfully registered.</p>
+          <p><strong>Hosting Services:</strong> Hosting services may be eligible for a refund if cancelled within 30 days from the date of purchase. After this period, no refunds will be provided. Refunds are not available for domain renewals or services that have been used.</p>
+  
+          <h5>12. Contact Information</h5>
+          <p>For questions or concerns, contact us at:</p>
+          <ul>
+            <li><strong>Email:</strong> hello@rootpromptnext.com</li>
+            <li><strong>Website:</strong> <a href="http://www.rootpromptnext.com">www.rootpromptnext.com</a></li>
+          </ul>
+          <p>Effective Date: <strong>December 7, 2024</strong></p>
+          <p>Next Renewal Date: <strong>December 7, 2025</strong></p>
+        </div>
+  
+        <!-- Privacy Policy -->
+        <div class="tab-pane fade" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
+          <h4>Privacy Policy</h4>
+          <p>Your privacy is important to us at RootPromptNext. This Privacy Policy outlines how we collect, use, and protect your information when you use our Website ("Website"). By accessing and using the Website, you agree to the practices described in this policy.</p>
+  
+          <h5>1. Information We Collect</h5>
+          <p><strong>Personal Information:</strong> When you register, contact us, or use our services, we may collect personal information, including your name, email address, phone number, and billing details.</p>
+          <p><strong>Non-Personal Information:</strong> We may collect non-personal data such as browser type, IP address, and pages accessed on our Website for analytical purposes.</p>
+  
+          <h5>2. How We Use Your Information</h5>
+          <ul>
+            <li>To provide and improve our services.</li>
+            <li>To process payments and complete transactions.</li>
+            <li>To communicate with you regarding updates, promotions, or support.</li>
+            <li>To analyze Website usage and enhance user experience.</li>
+          </ul>
+  
+          <h5>3. Sharing of Information</h5>
+          <p><strong>Third-Party Services:</strong> We may share your information with trusted third-party services for payment processing, analytics, and other operational purposes.</p>
+          <p><strong>Legal Compliance:</strong> We may disclose information if required by law or to protect our legal rights.</p>
+          <p><strong>No Sale of Data:</strong> We do not sell or rent your personal information to third parties.</p>
+  
+          <h5>4. Cookies and Tracking</h5>
+          <p><strong>Cookies:</strong> Our Website uses cookies to enhance user experience and analyze Website traffic. You can adjust your browser settings to disable cookies, but some features of the Website may not function properly.</p>
+          <p><strong>Third-Party Tracking:</strong> We may use third-party services like Google Analytics to monitor Website performance and user behavior.</p>
+  
+          <h5>5. Data Security</h5>
+          <p>We implement industry-standard security measures to protect your information from unauthorized access, alteration, or disclosure. However, no online platform can guarantee 100% security.</p>
+  
+          <h5>6. Your Rights</h5>
+          <ul>
+            <li>Access: You can request access to your personal data.</li>
+            <li>Correction: You may request corrections to inaccurate or incomplete data.</li>
+            <li>Deletion: You can request the deletion of your personal data, subject to legal and operational constraints.</li>
+            <li>Opt-Out: You may opt out of receiving promotional communications at any time.</li>
+          </ul>
+  
+          <h5>7. Third-Party Links</h5>
+          <p>Our Website may contain links to third-party websites. We are not responsible for the privacy practices or content of these sites. We recommend reviewing their privacy policies before providing any information.</p>
+  
+          <h5>8. Domain Registration Privacy</h5>
+          <p><strong>Data Collection for Domain Registration:</strong> When you register a domain, we may collect additional personal information, including your contact information and payment details, which is required for domain registration.</p>
+          <p><strong>Sharing of Domain Registration Data:</strong> Your domain registration details, including personal information, may be shared with domain registries and regulatory bodies as required by law or industry standards. This is necessary to ensure domain ownership and for managing domain-related services.</p>
+  
+          <h5>9. Web Hosting Privacy</h5>
+          <p><strong>Hosting Data Collection:</strong> When you sign up for web hosting services, we collect information related to your hosting account, including your contact information, payment details, and hosting preferences.</p>
+          <p><strong>Hosting Data Usage:</strong> Your hosting data is used to deliver the hosting service and may be shared with our infrastructure providers for technical support and maintenance purposes.</p>
+  
+          <h5>10. Changes to Privacy Policy</h5>
+          <p>We reserve the right to update this Privacy Policy at any time. Any changes will be reflected on this page with an updated "Effective Date." We encourage you to review this policy periodically.</p>
+  
+          <h5>11. Contact Us</h5>
+          <p>If you have questions or concerns about this Privacy Policy, please contact us at:</p>
+          <ul>
+            <li><strong>Email:</strong> privacy@rootpromptnext.com</li>
+            <li><strong>Website:</strong> <a href="http://www.rootpromptnext.com">www.rootpromptnext.com</a></li>
+          </ul>
+        </div>
+  
+        <!-- Refund Policy -->
+        <div class="tab-pane fade" id="refund" role="tabpanel" aria-labelledby="refund-tab">
+          <h4>Refund Policy</h4>
+          <p>At RootPromptNext, we aim to provide the highest quality services. However, we understand that sometimes a refund may be necessary. Please read our refund policy below:</p>
+  
+          <h5>1. Refund Eligibility</h5>
+          <p><strong>Domain Registration:</strong> Fees for domain registration are non-refundable once the domain has been successfully registered with the registry.</p>
+          <p><strong>Web Hosting:</strong> Hosting fees are refundable within 30 days of purchase, provided no services have been used. After 30 days, no refunds will be issued for hosting fees.</p>
+          <p><strong>Online Courses:</strong> Refunds are not provided after the first day of the demo class. If you do not attend the demo session, you are eligible for a full refund within 7 days of registration.</p>
+  
+          <h5>2. Request Process</h5>
+          <p>If you believe you are eligible for a refund, please contact us at support@rootpromptnext.com with your order details. Refund requests will be reviewed within 7 business days.</p>
+  
+          <h5>3. Non-Refundable Services</h5>
+          <p>The following services are non-refundable:</p>
+          <ul>
+            <li>Domain registration fees after successful registration.</li>
+            <li>Used or partially used hosting services.</li>
+            <li>Completed or partially completed online courses.</li>
+          </ul>
+  
+          <h5>4. Contact Information</h5>
+          <p>For refund-related inquiries, please reach out to us at:</p>
+          <ul>
+            <li><strong>Email:</strong> support@rootpromptnext.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Policies Section End -->
+  
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-white footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row gy-5 gx-4 pt-5">
+                    <div class="col-12">
+                        <h5 class="fw-bold text-white mb-4">Subscribe Our Newsletter</h5>
+                        <div class="position-relative" style="max-width: 400px;">
+                            <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <div class="row gy-5 g-4">
+                            <div class="col-md-6">
+                                <h5 class="fw-bold text-white mb-4">About Us</h5>
+                                <a class="btn btn-link" href="about.html">About Us</a>
+                                <a class="btn btn-link" href="contact.html">Contact Us</a>
+                                <a class="btn btn-link" href="policies.html">Privacy Policy</a>
+                                <a class="btn btn-link" href="policies.html">Terms & Condition</a>
+                                <a class="btn btn-link" href="policies.html">Support</a>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="fw-bold text-white mb-4">Our Services</h5>
+                                <a class="btn btn-link" href="domain.html">Domain Register</a>
+                                <a class="btn btn-link" href="hosting.html">Shared Hosting</a>
+                                <a class="btn btn-link" href="hosting.html">VPS Hosting</a>
+                                <a class="btn btn-link" href="hosting.html">Dedicated Hosting</a>
+                                <a class="btn btn-link" href="hosting.html">Reseller Hosting</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="fw-bold text-white mb-4">Get In Touch</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>C604, Gurukrupa Astter, Vadgaon Sheri, Pune (India)</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 842 121 8824</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>hello@rootpromptnext.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-lg-n5">
+                        <div class="bg-light rounded" style="padding: 30px;">
+                            <input type="text" class="form-control border-0 py-2 mb-2" placeholder="Name">
+                            <input type="email" class="form-control border-0 py-2 mb-2" placeholder="Email">
+                            <textarea class="form-control border-0 mb-2" rows="2" placeholder="Message"></textarea>
+                            <button class="btn btn-primary w-100 py-2">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="https://rootpromptnext.com">RootPromptNext (OPC) Pvt. Ltd.</a> | All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+						<br>	Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
